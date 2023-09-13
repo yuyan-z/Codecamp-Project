@@ -2,7 +2,7 @@ import os
 import argparse
 
 
-class Commend:
+class Command:
     def __init__(self, args):
         self.task = args.task
         self.file_name = args.file_name
@@ -119,8 +119,8 @@ if __name__ == '__main__':
 
     # print(args.task, args.file_name, args.op, args.params)
 
-    commend = Commend(args)
-    commend.do_command()
+    command = Command(args)
+    command.do_command()
 
 
 
