@@ -159,23 +159,7 @@ def print_table(heads: list, data: list, cols_max_len: dict):
     print(border_str)
 
 
-if __name__ == '__main__':
-    sub_attrs = [
-        'project',
-        'state',
-        'priority',
-        'context',
-        'tag',
-        'user',
-        'estimated_duration',
-        'actual_duration'
-    ]
-
-    # command_str = 'task lestaches.txt modify 2 --description task 2 modified --project codecamp 4'
-    # command_str = 'task lestaches.txt show'
-    command_str = 'task lestaches.txt add task 1'
-    # command_str = 'task lestaches.txt rm 2'
-
+def get_args(command: str):
     parser = argparse.ArgumentParser(prog='task', description="Input a command to manage task")
     parser.add_argument("task", choices=['task'], help="Task")
     parser.add_argument("file_name", type=str, help="File name")
@@ -200,9 +184,30 @@ if __name__ == '__main__':
     # show
     parser_show = subparsers.add_parser('show', help='Show tasks')
 
-    args = parser.parse_args(command_str.split())
+    args = parser.parse_args(command.split())
 
-    command = Command(vars(args))
+    return vars(args)
+
+
+if __name__ == '__main__':
+    sub_attrs = [
+        'project',
+        'state',
+        'priority',
+        'context',
+        'tag',
+        'user',
+        'estimated_duration',
+        'actual_duration'
+    ]
+
+    # command_str = 'task lestaches.txt modify 2 --description task 2 modified --project codecamp 4'
+    command_str = 'task lestaches.txt show'
+    # command_str = 'task lestaches.txt add task 1'
+    # command_str = 'task lestaches.txt rm 2'
+
+    args_dict = get_args(command_str)
+    command = Command(args_dict)
     command.do_command()
 
     # while True:
@@ -210,16 +215,8 @@ if __name__ == '__main__':
     #     if command_str == "q":
     #         break
     #     else:
-    #         parser = argparse.ArgumentParser(prog='task', description="Input a command")
-    #         parser.add_argument("task", type=str, help="Task")
-    #         parser.add_argument("file_name", type=str, help="File name")
-    #         parser.add_argument("op", choices=["add", "modify", "rm", "show"], help="Operation for the task")
-    #         parser.add_argument("params", nargs="*", help="Other parameters for the operation")
-    #
-    #         args = parser.parse_args(command_str.split())
-    #         print(args)
-    #
-    #         command = Command(args)
+    #         args_dict = get_args(command_str)
+    #         command = Command(args_dict)
     #         command.do_command()
 
 
