@@ -4,7 +4,7 @@ import argparse
 import os
 
 class Todo:
-    def __init__(self):
+    def __init__(self, args):
         self.last_row = 0 #Iniciate index with zero
 
         self.field_names = ["id", "task"]
@@ -13,13 +13,14 @@ class Todo:
         self.field_names = self.field_names + self.sub_attrs
 
         self.read_existing_data()
-        self.iniciate_parser()
 
         self.l = Log()
 
+        self.args = args
         if self.args:
 
             if self.args.add:
+                self.args.add = " ".join(self.args.add)
                 
                 self.adding_all_attrs()
 
@@ -60,17 +61,6 @@ class Todo:
 
             if self.args.log:
                 self.l.show()
-    
-    def iniciate_parser(self):
-        parser = argparse.ArgumentParser(prog='task', usage='%(prog)s [options]')
-        parser.add_argument('--add', help='adding a task', metavar=('task'))
-        parser.add_argument('--clear', help='clear all tasks', action='store_true')
-        parser.add_argument('--show', help='show all tasks', action='store_true')
-        parser.add_argument('--delete', help='delete task by id', type=int, metavar=('id'))
-        parser.add_argument('--modify', help='modify task by id', nargs=3, metavar=('id', 'column', 'value'))
-        parser.add_argument('--log', help='show log', action='store_true')
-
-        self.args = parser.parse_args()
 
     def read_existing_data(self):
         try:
@@ -150,6 +140,8 @@ class Log:
 
     def read_file(self):
         with open("./backup/.log", "r") as fp:
+            data = fp.read()
+            print(data)
             self.mylog = from_csv(fp)
 
     def save_file(self, table):
@@ -158,11 +150,28 @@ class Log:
             f.write(data)
 
     def add_log(self, action:str):
-        self.mylog.add_row([datetime.datetime.now(), action])
+        print('action: ', action)
+        self.mylog.add_row([datetime.datetime.now(), str(action)])
         self.save_file(self.mylog)
 
     def show(self):
         print(self.mylog)
 
 if __name__ == '__main__':
-    t = Todo()
+    while True:
+        command_str = input("Input a command, q for quit: ")
+        if command_str == "q":
+            break
+        else:
+            parser = argparse.ArgumentParser(prog='task', usage='%(prog)s [options]')
+            parser.add_argument("task", type=str, help="Task")
+            parser.add_argument('--add', nargs='*', help='adding a task', metavar=('task'))
+            parser.add_argument('--clear', help='clear all tasks', action='store_true')
+            parser.add_argument('--show', help='show all tasks', action='store_true')
+            parser.add_argument('--delete', help='delete task by id', type=int, metavar=('id'))
+            parser.add_argument('--modify', help='modify task by id', nargs=3, metavar=('id', 'column', 'value'))
+            parser.add_argument('--log', help='show log', action='store_true')
+
+            args = parser.parse_args(command_str.split())
+            print(args)
+            t = Todo(args)
