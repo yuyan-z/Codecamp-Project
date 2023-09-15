@@ -13,7 +13,7 @@ argparse, datetime, os
 | `task -h` | Get help |
 
 # Functions
-## def get_args(command: str, config)
+## get_args(command: str, config)
 Get arguments from the input command string `command`, given the configuration `config`.
 
 Return a `dict` `args_dict` with the format of `{arg_name: arg_value}`
@@ -23,14 +23,16 @@ Author: EL BEZ Oumayma, HENI Yahia, LOBATO Felipe, ZHAO Yuyan
 ## class Command
 Read and run the command, given `args_dict` and the configuration `config`
 
-### def __init__(self, args_dict, config)
-Initial the object's attributes, including `self.file_name` the file name to store the task data, `self.fields` the fields for the task,      `self.tasks` the list to store the task data, `cols_max_len` the maximum length of each column
-
-### def do_command(self)
-
-
-
 Author: EL BEZ Oumayma, HENI Yahia, LOBATO Felipe, ZHAO Yuyan
+
+### __init__(self, args_dict, config)
+Initial the object's attributes, including `self.file_name` the file name to store the tasks data, `self.fields` the fields for the task,      `self.tasks` the list to store the tasks data, `cols_max_len` the maximum length of each column
+
+### do_command(self)
+First read tasks data from file, then run the operation function, finally save a history file
+
+### add(self)
+
 
 
 ## class Log
@@ -38,10 +40,10 @@ Manage log file.
 
 Author: LOBATO Felipe, ZHAO Yuyan
 
-### def get_logs(self)
+### get_logs(self)
 First read the log file from the given log file path, if it does not exist then create one.
 
-### def add_log(self, action: str)
+### add_log(self, action: str)
 Add a new log string at the end of log file after doing a command, with the format of '%Y/%m/%d %H:%M:%S_action'
 
 
@@ -53,12 +55,12 @@ Author: ZHAO Yuyan
 
 
 
-## def print_table(heads: list, data: list, cols_max_len: dict)
+## print_table(heads: list, data: list, cols_max_len: dict)
 Display the list `data` in tabular form, given a list of header fields `heads` and the maximum length of each column `cols_max_len`.
 
 Author: ZHAO Yuyan
 
-## def attr2str(attr)
+## attr2str(attr)
 Convert the input variable `attr` to string type. The type of `attr` can be `str`, `int`, or `list`.
 
 Author: ZHAO Yuyan
