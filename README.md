@@ -1,5 +1,12 @@
 # Codecamp-Project
 
+# Help
+task -h
+task lestaches.txt add group meeting 1
+
+
+
+
 # Results
 1. First time add a task in the task file  
 
@@ -20,6 +27,10 @@
 5. Find the task with the given attributes
 
 ![image](https://github.com/yuyan-z/Codecamp-Project/assets/64955334/98264966-4cf8-41d1-98e6-22d32fe52c40)
+
+6. Help
+
+![image](https://github.com/yuyan-z/Codecamp-Project/assets/64955334/7e148cdf-e1f8-49d2-a9a0-28a63a8a701b)
 
 
 
