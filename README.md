@@ -17,6 +17,10 @@
 
 ![image](https://github.com/yuyan-z/Codecamp-Project/assets/64955334/d3771a94-09e7-49a3-ba01-1f1540752e83)
 
+5. Find the task with the given attributes
+![image](https://github.com/yuyan-z/Codecamp-Project/assets/64955334/98264966-4cf8-41d1-98e6-22d32fe52c40)
+
+
 
 
 
