@@ -40,7 +40,10 @@
 
 ![image](https://github.com/yuyan-z/Codecamp-Project/assets/64955334/98264966-4cf8-41d1-98e6-22d32fe52c40)
 
-6. We can see that, after each operation, a log string is generated in `log.txt`, and a history file is generated in `.\history\`.
+6. We can see that, after each operation, a log string is generated in `log.txt`, and a history file is generated in `.\history\`
+
+![image](https://github.com/yuyan-z/Codecamp-Project/assets/64955334/3a4d18a3-6f93-4ed0-b51e-051ecb9ffef5)
+
 
 
 
