@@ -15,6 +15,7 @@ argparse, datetime, os
 # Functions
 ## def get_args(command: str, config)
 Get arguments from the input command string `command`, given the configuration `config`.
+
 Return a `dict` with the format of `{arg_name: arg_value}`
 
 Author: EL BEZ Oumayma, HENI Yahia, LOBATO Felipe, ZHAO Yuyan
