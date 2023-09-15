@@ -13,8 +13,17 @@ argparse, datetime, os
 | `task -h` | Get help |
 
 # Functions
-## class Command
+## def get_args(command: str, config)
+Get arguments from the input command string `command`, given the configuration `config`.
+Return a `dict` with the format of `{arg_name: arg_value}`
+
 Author: EL BEZ Oumayma, HENI Yahia, LOBATO Felipe, ZHAO Yuyan
+
+## class Command
+
+
+Author: EL BEZ Oumayma, HENI Yahia, LOBATO Felipe, ZHAO Yuyan
+
 
 ## class Log
 Manage log file. 
@@ -32,10 +41,7 @@ The configuration can be modified in `class Config`, including the attributes of
 
 Author: ZHAO Yuyan
 
-## def get_args(command: str, config)
-Get arguments from the input command string `command`, given the configuration `config`.
 
-Author: EL BEZ Oumayma, HENI Yahia, LOBATO Felipe, ZHAO Yuyan
 
 ## def print_table(heads: list, data: list, cols_max_len: dict)
 Display the list `data` in tabular form, given a list of header fields `heads` and the maximum length of each column `cols_max_len`.
