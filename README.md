@@ -26,7 +26,7 @@
 
 ![image](https://github.com/yuyan-z/Codecamp-Project/assets/64955334/4f4c7be2-45af-4997-b8ee-71267bf33179)
 
-4. Remove the task with the given id. The id of the following tasks is decreased by one
+4. Remove the task with the given id. The id of the following rest tasks is decreased by one
 
 ![image](https://github.com/yuyan-z/Codecamp-Project/assets/64955334/d3771a94-09e7-49a3-ba01-1f1540752e83)
 
