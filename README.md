@@ -25,7 +25,8 @@
 
 ![image](https://github.com/yuyan-z/Codecamp-Project/assets/64955334/139387cb-c07a-48bf-9a22-ae79b4bec089)
 
-3. Modify the task with the given id and the given attributes
+3. Modify the task with the given id `2` and the given parameters `--state completed --actual_duration 1h`  
+   `task lestaches.txt modify 2 --state completed --actual_duration 1h`  
 
 ![image](https://github.com/yuyan-z/Codecamp-Project/assets/64955334/4f4c7be2-45af-4997-b8ee-71267bf33179)
 
