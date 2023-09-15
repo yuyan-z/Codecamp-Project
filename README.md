@@ -10,8 +10,10 @@
 | `task <file_name> find <--attribute> <value>` | Find the task with the given attributes |  
 | `task -h` | Get help |
 
-## Configuration
-The configuration can be modified in `config.py`, including the attributes of task, the range of choice and help text for attributes
+## Functions
+
+### class Config
+The configuration can be modified in `class Config`, including the attributes of task, the range of choice and help text for attributes
 
 
 
