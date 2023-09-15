@@ -8,7 +8,7 @@ argparse, datetime, os
 | `task <file_name> add <description>` | Add a task in the task file, given description and other attributes |  
 | `task <file_name> modify <id> <--attribute> <value>` | Modify the task with the given id and the given attributes |  
 | `task <file_name> rm <id>` | Remove the task with the given id |  
-| `task <file_name> show` | Show tasks |  
+| `task <file_name> show` | Show tasks in tabular form |  
 | `task <file_name> find <--attribute> <value>` | Find the task with the given attributes |  
 | `task -h` | Get help |
 
@@ -29,11 +29,23 @@ Author: EL BEZ Oumayma, HENI Yahia, LOBATO Felipe, ZHAO Yuyan
 Initial the object's attributes, including `self.file_name` the file name to store the tasks data, `self.fields` the fields for the task,      `self.tasks` the list to store the tasks data, `cols_max_len` the maximum length of each column
 
 ### do_command(self)
-First read tasks data from file, then run the operation function, finally save a history file
+First read tasks data from task file `self.file_name`. If it does not exist then create one.
+Next, run the operation function. Finally save a history file
 
 ### add(self)
+Add a task in the task file `self.file_name`, given description and other attributes
 
+### modify(self)
+Modify the task with the given id and the given attributes
 
+### rm(self)
+Remove the task with the given id
+
+## show(self)
+Show tasks in tabular form
+
+## find(self)
+Find the task with the given attributes
 
 ## class Log
 Manage log file. 
@@ -54,11 +66,11 @@ The configuration can be modified in `class Config`, including the attributes of
 Author: ZHAO Yuyan
 
 
-
 ## print_table(heads: list, data: list, cols_max_len: dict)
 Display the list `data` in tabular form, given a list of header fields `heads` and the maximum length of each column `cols_max_len`.
 
 Author: ZHAO Yuyan
+
 
 ## attr2str(attr)
 Convert the input variable `attr` to string type. The type of `attr` can be `str`, `int`, or `list`.
