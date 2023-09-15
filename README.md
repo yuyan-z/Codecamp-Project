@@ -1,6 +1,6 @@
 # Codecamp-Project
 
-## Help
+## Commands
 task -h  
 task <file_name> add <description\>  
 task <file_name> find <--attribute\> <value\>  
