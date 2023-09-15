@@ -3,11 +3,11 @@
 ## Commands
 | Command | Description |  
 | --- | --- |
-| `task <file_name> add <description\>` | Add a task in the task file, given description and other attributes |  
-| `task <file_name> modify <id\> <--attribute\> <value\>` | Modify the task with the given id and the given attributes |  
-| `task <file_name> rm <id\>` | Remove the task with the given id |  
+| `task <file_name> add <description>` | Add a task in the task file, given description and other attributes |  
+| `task <file_name> modify <id> <--attribute> <value>` | Modify the task with the given id and the given attributes |  
+| `task <file_name> rm <id>` | Remove the task with the given id |  
 | `task <file_name> show` | Show tasks |  
-| `task <file_name> find <--attribute\> <value\>` | Find the task with the given attributes |  
+| `task <file_name> find <--attribute> <value>` | Find the task with the given attributes |  
 | `task -h` | Get help |
 
 
