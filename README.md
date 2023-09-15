@@ -19,9 +19,13 @@ argparse, datetime, os
 ### class Log
 
 ### class Config
-The configuration can be modified in `class Config`, including the attributes of task, the range of choice and help text for attributes
+The configuration can be modified in `class Config`, including the attributes of task `self.sub_attrs`, the range of choice `self.choices` and help text for attributes `self.helps`
 
+### def get_args(command: str, config)
 
+### def print_table(heads: list, data: list, cols_max_len: dict)
+
+### def attr2str(attr)
 
 ## Example
 1. Run main.py  
