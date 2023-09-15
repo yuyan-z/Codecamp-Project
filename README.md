@@ -1,7 +1,7 @@
 # Codecamp-Project
 
 ## Commands
-task -h  
+Get help \t task -h  
 task <file_name> add <description\>  
 task <file_name> find <--attribute\> <value\>  
 task <file_name> modify <--attribute\> <value\>  
