@@ -16,7 +16,8 @@
 ## Example
 1. Run main.py  
 2. First time add a task in the task file `lestaches.txt` with the description `group meeting 1`  
-   `task lestaches.txt add group meeting 1`  
+   `task lestaches.txt add group meeting 1`
+   Set values for other parameters according to the tips
 
 ![image](https://github.com/yuyan-z/Codecamp-Project/assets/64955334/03b7a39c-c8e2-4db1-9eda-fef34e5ee95f)
 
