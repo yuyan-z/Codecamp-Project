@@ -1,0 +1,6 @@
+id,description,project,state,priority,context,tag,user,start_time,deadline,estimated_duration,actual_duration,recurring
+1,group meeting 1,codecamp,started,1,classroom,dcl,yuyan,15/09/2023 09:30,15/09/2023 10:00,30 min,20 min,
+2,personal work,codecamp,started,1,classroom,dcl,yuyan,15/09/2023 10:00,15/09/2023 12:00,2 h,,
+3,lunch,,started,2,rak,,yuyan,15/09/2023 12:15,,40 min,50 min,
+4,sports,apas,started,3,gym,,yuyan,15/09/2023 17:00,,1 h,,
+5,submit code,codecamp,,1,moodle,dcl,yuyan,,15/09/2023 18:00,,,
