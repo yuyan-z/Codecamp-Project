@@ -12,6 +12,10 @@
 
 ## Functions
 
+### class Command
+
+### class Log
+
 ### class Config
 The configuration can be modified in `class Config`, including the attributes of task, the range of choice and help text for attributes
 
