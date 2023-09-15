@@ -1,8 +1,8 @@
 # Codecamp-Project
 
 # Help
-task -h
-task lestaches.txt add group meeting 1
+task -h  
+task [file_name] add [description]
 
 
 
