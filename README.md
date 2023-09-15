@@ -13,19 +13,26 @@ argparse, datetime, os
 | `task -h` | Get help |
 
 ## Functions
-
 ### class Command
+Author: EL BEZ Oumayma, HENI Yahia, LOBATO Felipe, ZHAO Yuyan
 
 ### class Log
+Author: LOBATO Felipe, ZHAO Yuyan
 
 ### class Config
-The configuration can be modified in `class Config`, including the attributes of task `self.sub_attrs`, the range of choice `self.choices` and help text for attributes `self.helps`
+The configuration can be modified in `class Config`, including the attributes of task `self.sub_attrs`, the range of choice `self.choices` and help text for attributes `self.helps`  
+Author: ZHAO Yuyan
 
 ### def get_args(command: str, config)
+Get arguments from the input command string `command`. Load the configuration from `config`
+Author: EL BEZ Oumayma, HENI Yahia, LOBATO Felipe, ZHAO Yuyan
 
 ### def print_table(heads: list, data: list, cols_max_len: dict)
+Author: ZHAO Yuyan
 
 ### def attr2str(attr)
+Convert the input variable `attr` to string type. The type of `attr` can be a string, an integer, or a list.  
+Author: ZHAO Yuyan
 
 ## Example
 1. Run main.py  
