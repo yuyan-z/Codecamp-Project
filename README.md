@@ -41,10 +41,10 @@ Modify the task with the given id and the given attributes
 ### rm(self)
 Remove the task with the given id
 
-## show(self)
+### show(self)
 Show tasks in tabular form
 
-## find(self)
+### find(self)
 Find the task with the given attributes
 
 ## class Log
