@@ -24,14 +24,15 @@ The configuration can be modified in `class Config`, including the attributes of
 Author: ZHAO Yuyan
 
 ### def get_args(command: str, config)
-Get arguments from the input command string `command`. Load the configuration from `config`
+Get arguments from the input command string `command`, given the configuration `config`.  
 Author: EL BEZ Oumayma, HENI Yahia, LOBATO Felipe, ZHAO Yuyan
 
 ### def print_table(heads: list, data: list, cols_max_len: dict)
+Display the list `data` in tabular form, given a list of header fields `heads` and the maximum length of each column `cols_max_len`.  
 Author: ZHAO Yuyan
 
 ### def attr2str(attr)
-Convert the input variable `attr` to string type. The type of `attr` can be a string, an integer, or a list.  
+Convert the input variable `attr` to string type. The type of `attr` can be `str`, `int`, or `list`.  
 Author: ZHAO Yuyan
 
 ## Example
