@@ -6,7 +6,7 @@ task <file_name> add <description\>
 task <file_name> find <attribute\> <value\>  
 task <file_name> modify <attribute\> <value\>  
 task <file_name> rm <id\>  
-task <file_name> show <id\>  
+task <file_name> show
 
 
 
