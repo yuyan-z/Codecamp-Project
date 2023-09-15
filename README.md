@@ -29,13 +29,15 @@ Author: EL BEZ Oumayma, HENI Yahia, LOBATO Felipe, ZHAO Yuyan
 ## class Log
 Manage log file. 
 
+Author: LOBATO Felipe, ZHAO Yuyan
+
 ### def get_logs(self)
 First read the log file from the given log file path, if it does not exist then create one.
 
 ### def add_log(self, action: str)
 Add a new log string at the end of log file after doing a command, with the format of '%Y/%m/%d %H:%M:%S_action'
 
-Author: LOBATO Felipe, ZHAO Yuyan
+
 
 ## class Config
 The configuration can be modified in `class Config`, including the attributes of task `self.sub_attrs`, the range of choice `self.choices` and help text for attributes `self.helps`
