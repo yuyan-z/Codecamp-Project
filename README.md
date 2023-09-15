@@ -1,8 +1,8 @@
 # Codecamp-Project
-## Libraries used
+# Libraries used
 argparse, datetime, os
 
-## Commands
+# Commands
 | Command | Description |  
 | --- | --- |
 | `task <file_name> add <description>` | Add a task in the task file, given description and other attributes |  
@@ -12,42 +12,42 @@ argparse, datetime, os
 | `task <file_name> find <--attribute> <value>` | Find the task with the given attributes |  
 | `task -h` | Get help |
 
-## Functions
-### class Command
+# Functions
+## class Command
 Author: EL BEZ Oumayma, HENI Yahia, LOBATO Felipe, ZHAO Yuyan
 
-### class Log
+## class Log
 Manage log file. 
 
-#### def get_logs(self)
+### def get_logs(self)
 First read the log file from the given log file path, if it does not exist then create one.
 
-#### def add_log(self, action: str)
+### def add_log(self, action: str)
 Add a new log string at the end of log file after doing a command, with the format of '%Y/%m/%d %H:%M:%S_action'
 
 Author: LOBATO Felipe, ZHAO Yuyan
 
-### class Config
+## class Config
 The configuration can be modified in `class Config`, including the attributes of task `self.sub_attrs`, the range of choice `self.choices` and help text for attributes `self.helps`
 
 Author: ZHAO Yuyan
 
-### def get_args(command: str, config)
+## def get_args(command: str, config)
 Get arguments from the input command string `command`, given the configuration `config`.
 
 Author: EL BEZ Oumayma, HENI Yahia, LOBATO Felipe, ZHAO Yuyan
 
-### def print_table(heads: list, data: list, cols_max_len: dict)
+## def print_table(heads: list, data: list, cols_max_len: dict)
 Display the list `data` in tabular form, given a list of header fields `heads` and the maximum length of each column `cols_max_len`.
 
 Author: ZHAO Yuyan
 
-### def attr2str(attr)
+## def attr2str(attr)
 Convert the input variable `attr` to string type. The type of `attr` can be `str`, `int`, or `list`.
 
 Author: ZHAO Yuyan
 
-## Example
+# Example
 1. Run main.py  
 2. First time add a task in the task file `lestaches.txt` with the description `group meeting 1`
    
