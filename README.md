@@ -16,13 +16,18 @@ argparse, datetime, os
 ## def get_args(command: str, config)
 Get arguments from the input command string `command`, given the configuration `config`.
 
-Return a `dic` `args_dict` with the format of `{arg_name: arg_value}`
+Return a `dict` `args_dict` with the format of `{arg_name: arg_value}`
 
 Author: EL BEZ Oumayma, HENI Yahia, LOBATO Felipe, ZHAO Yuyan
 
 ## class Command
-Read and run the command, given 
-def __init__(self, args_dict, config)
+Read and run the command, given `args_dict` and the configuration `config`
+
+### def __init__(self, args_dict, config)
+Initial the object's attributes, including `self.file_name` the file name to store the task data, `self.fields` the fields for the task,      `self.tasks` the list to store the task data, `cols_max_len` the maximum length of each column
+
+### def do_command(self)
+
 
 
 Author: EL BEZ Oumayma, HENI Yahia, LOBATO Felipe, ZHAO Yuyan
